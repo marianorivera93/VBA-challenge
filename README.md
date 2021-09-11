@@ -1,4 +1,4 @@
-# VBA-challenge# VBA-challenge
+# VBA-challenge
 Sub MultipleYearStockData():
 
 'Basic String/Double Variables
@@ -20,7 +20,7 @@ Dim greatest_percent_increase_ticker As String
 Dim greatest_percent_decrease_ticker As String
 Dim greatest_stock_volume_ticker As String
 
-' loop over each worksheet
+' Loop each worksheet
 For Each ws In Worksheets
 
     ' Apply to rest of Worksheet
@@ -50,12 +50,12 @@ For Each ws In Worksheets
         ' Ticker Value
         ticker = Cells(i, 1).Value
         
-        ' Ticker Opening Price
+        ' Opening Price
         If opening_price = 0 Then
             opening_price = Cells(i, 3).Value
         End If
         
-        ' Ticker Total Stock Volume Values
+        'Total Stock Volume Values
         total_stock_volume = total_stock_volume + Cells(i, 7).Value
         
         ' Ticker Value Occurs
